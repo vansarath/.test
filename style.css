@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Fira+Sans+Extra+Condensed:wght@300&family=Josefin+Sans:ital,wght@0,600;1,500&family=Koulen&family=Patrick+Hand&family=Poppins:wght@400;600;900&family=Rowdies:wght@300&family=Ysabeau:wght@700&display=swap');
+
+:root{
+    --font-poppin : 'Poppins', sans-serif;
+    --bg-btn : #1da1f2;
+    --bg-page : linear-gradient( to bottom , #434343 , #000000);
+    --bg-color-title : #FEBE10;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppin);
+}
+body{
+    background: var(--bg-page) no-repeat center;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  make style login form box  */
+.login-form {
+    border: 1.5px solid white;
+    background: transparent;
+    border-radius: 10px;
+    padding: 14px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+color: white;
+justify-content: center;
+}
+
+.login-form > p:first-child {
+    font-size: 24px;
+    text-align: center;
+    color: var(--bg-color-title);
+}
+.login-form > .input-group > label  {
+    margin-right: 10px;   
+}
+.login-form > .input-group > input {
+    background: transparent;
+    border: 0.8px solid white;
+    padding: 8px 20px;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+}
+.login-form > .input-group > input::placeholder{
+    font-size: 17px;
+}
+.login-form > .input-group > p{
+    margin-top: 12px;
+    text-align : center;
+    visibility: hidden;
+    color: red;
+}
+#submit{
+    background: var(--bg-color-title);
+    color: black;
+    width: 200px;
+    height: 40px;
+    border-radius :3px;;
+    border: none;
+    margin: auto;
+    font-size: 18px;
+}
+:focus{
+    border: none;
+}
